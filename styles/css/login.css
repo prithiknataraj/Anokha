@@ -1,0 +1,24 @@
+body {
+    background: url("/styles/images/bg.jpg") center/cover no-repeat;
+}
+
+.navbar {
+    position: fixed; /* Make the navbar stick to the top */
+    width: 100%;
+    z-index: 1000;
+}
+
+#title {
+    font-family: "Teko", sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    font-size: 30px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Ubuntu", sans-serif;
+}

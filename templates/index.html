@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anokha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/styles/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <i class='navbar-brand bx bxl-graphql bx-spin' style='color:#d66868; font-size: 50px;'></i>
+            <a class="navbar-brand" id="title" href="#">Anokha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active me-3" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active me-3" aria-current="page" href="#lp-h-2">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('hi')">Hindi</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ta')">Tamil</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="login">
+                    <button class="btn custom-login-button me-3" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="lp-h-1">
+            <h1>
+                Welcome to Anokha!
+            </h1>
+            <p>
+                Transforming Facilities into Future Energy Hubs: Evaluate, Repurpose, and Innovate with Confidence.
+            </p>
+            <a href="#lp-h-2" class="btn find-more-button">Find More</a>
+        </div>
+        <div id="lp-h-2">
+            <h1>
+                Join our Gatherings!
+            </h1>
+            <p>Nithish will tell me what to add in the about. This content is called about for this landing page.</p>
+            <button>
+                Login
+            </button>
+        </div>
+    </header>
+    <footer>
+        <h1>Copy Right - @Team <b>YUKTHI</b> - 2024</h1>
+    </footer>
+    <script>
+        const translations = {
+            en: {
+                title: "Anokha",
+                welcome: "Welcome to Anokha!",
+                description: "Transforming Facilities into Future Energy Hubs: Evaluate, Repurpose, and Innovate with Confidence.",
+                findMore: "Find More",
+                joinGatherings: "Join our Gatherings!",
+                aboutContent: "Nithish will tell me what to add in the about. This content is called about for this landing page.",
+                login: "Login",
+                copyright: "Copy Right - @Team YUKTHI - 2024"
+            },
+            hi: {
+                title: "अनौखा",
+                welcome: "अनौखा में आपका स्वागत है!",
+                description: "सुविधाओं को भविष्य की ऊर्जा केंद्रों में परिवर्तित करना: आत्मविश्वास के साथ मूल्यांकन करें, पुन: उपयोग करें और नवाचार करें।",
+                findMore: "और जानें",
+                joinGatherings: "हमारे समागम में शामिल हों!",
+                aboutContent: "नितीश मुझे बताएगा कि बारे में क्या जोड़ना है। इस लैंडिंग पेज के लिए इस सामग्री को बारे कहा जाता है।",
+                login: "लॉग इन करें",
+                copyright: "प्रतिलिप्याधिकार - @टीम युक्ति - 2024"
+            },
+            ta: {
+                title: "அனோகா",
+                welcome: "அனோகாவிற்கு வரவேற்கிறோம்!",
+                description: "வசதிகளை எதிர்கால ஆற்றல் மையங்களாக மாற்றுதல்: நம்பிக்கையுடன் மதிப்பீடு செய்யவும், மறுசுழற்சி செய்யவும், புதுமை செய்யவும்.",
+                findMore: "மேலும் அறிக",
+                joinGatherings: "எங்கள் கூடுதல்களில் சேருங்கள்!",
+                aboutContent: "நிதிஷ் என்ன சேர்க்க வேண்டும் என்பதை கூறுவார். இந்த லாண்டிங் பக்கத்திற்கு இந்த உள்ளடக்கம் பற்றி என்று அழைக்கப்படுகிறது.",
+                login: "உள்நுழை",
+                copyright: "பதிப்புரிமை - @யுக்தி குழு - 2024"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.getElementById("title").textContent = translations[lang].title;
+            document.querySelector("#lp-h-1 h1").textContent = translations[lang].welcome;
+            document.querySelector("#lp-h-1 p").textContent = translations[lang].description;
+            document.querySelector(".find-more-button").textContent = translations[lang].findMore;
+            document.querySelector("#lp-h-2 h1").textContent = translations[lang].joinGatherings;
+            document.querySelector("#lp-h-2 p").textContent = translations[lang].aboutContent;
+            document.querySelector("#lp-h-2 button").textContent = translations[lang].login;
+            document.querySelector("footer h1").textContent = translations[lang].copyright;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-07l1T94PpG1O2/8ZIkGS5R84lDQDz8NhYuo4W1lT1uB8W5rS3B8XvNeG0D4yBrpP" crossorigin="anonymous"></script>
+</body>
+
+</html>

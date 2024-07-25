@@ -1,0 +1,76 @@
+body {
+    background: url("/styles/images/bg.jpg") center/cover no-repeat;
+}
+
+.navbar {
+    position: fixed; /* Make the navbar stick to the top */
+    width: 100%;
+    z-index: 1000;
+}
+
+#title {
+    font-family: "Teko", sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+label {
+    font-family: "Dosis", sans-serif;
+    font-size: 1rem;
+}
+
+form .form-control {
+    border-radius: 0.375rem;
+    border-color: #d66868;
+}
+
+button[type="submit"] {
+    background-color: #d66868;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer {
+    background-color: white;
+    border-top: 1px solid #e9ecef;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
