@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: url("/styles/images/bg.jpg") center/cover no-repeat;
+    background: url("/styles/images/bg.jpg") center/cover no-repeat fixed;
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     height: 100vh;
@@ -8,15 +8,13 @@ body {
 }
 
 .sidebar {
-    width: 25rem;
-    backdrop-filter: blur(20px);
-    background-color: rgba(214, 104, 104, 0.5);
+    width: 20rem;
+    background-color: #d66868;
     display: flex;
     flex-direction: column;
     padding: 20px;
     position: fixed;
     height: 100%;
-    overflow-y: auto;
     transition: all 0.3s ease;
     z-index: 10;
 }
@@ -25,7 +23,6 @@ body {
     width: 0;
     background-color: transparent;
     backdrop-filter: none;
-    overflow: hidden;
 }
 
 .sidebar .profile-section {
@@ -58,7 +55,7 @@ body {
 #title {
     font-family: "Teko", sans-serif;
     color: white;
-    margin-right: 3rem;
+    margin-right: 2rem;
     display: inline-block;
     transition: opacity 0.3s ease;
 }
@@ -94,31 +91,10 @@ body {
     color: #d66868;
 }
 
-.sidebar-toggle {
-    position: absolute;
-    top: 50%;
-    right: -1rem;
-    transform: translateY(-50%);
-    background: #d66868;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    padding: 0.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 11;
-}
-
-.sidebar-toggle:hover {
-    background: #b35858;
-}
-
 .main-content {
-    margin-left: 25rem;
+    margin-left: 21rem;
     padding: 20px;
     width: calc(100% - 25rem);
-    overflow: auto;
     transition: margin-left 0.3s ease, width 0.3s ease;
 }
 
@@ -128,9 +104,13 @@ body {
 }
 
 .content {
-    display: none;
+    width: 67rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 2rem 2rem;
     opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
 .content.active {
@@ -147,4 +127,151 @@ h1 {
 p {
     font-family: 'Dosis', sans-serif;
     font-size: 1.2rem;
+}
+
+.sidebar-toggle {
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 11;
+}
+
+.sidebar-toggle .bx-chevron-left {
+    display: inline;
+}
+
+.sidebar.minimized .sidebar-toggle .bx-chevron-left {
+    display: none;
+}
+
+.sidebar.minimized .sidebar-toggle .bx-chevron-right {
+    background-color: #d66868;
+    border-radius: 3px;
+    display: inline;
+}
+
+.sidebar-toggle .bx-chevron-right {
+    background-color: #d66868;
+    border-radius: 3px;
+    display: none;
+}
+
+#names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+#names h1 {
+    font-size: 3.5rem;
+    color: #d66868;
+}
+
+#names p {
+    font-size: 1.5rem;
+    color: #d66868cf;
+}
+
+.dash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.dash h1 {
+    color: #d66868;
+    font-size: 3rem;
+}
+
+.prog-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    width: 27rem;
+    margin: 2rem;
+}
+
+progress {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #d8d8d8;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #d8d8d8;
+}
+
+progress::-webkit-progress-value {
+    background-color: #8b16b9;
+    transition: width 1s ease;
+}
+
+progress::-moz-progress-bar {
+    background-color: #7c03b0;
+}
+
+.progress-container label {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#division {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#division h1 {
+    cursor: pointer;
+    background-color: #d66868;
+    font-family: 'Dosis', sans-serif;
+    padding: .5rem 2rem .5rem 2rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: white;
+    margin: 1rem;
 }
