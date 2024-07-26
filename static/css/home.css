@@ -4,7 +4,8 @@ body {
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     height: 100vh;
-    transition: margin-left 0.3s ease;
+    overflow: hidden;
+    /* Prevent body overflow */
 }
 
 .sidebar {
@@ -35,6 +36,21 @@ body {
     opacity: 0;
 }
 
+.dash h1 {
+    color: #d66868;
+    font-size: 3rem;
+}
+
+.in-dash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prog-cont {
+    margin: 1rem;
+}
+
 .sidebar .profile-logo {
     margin-top: 2rem;
     display: flex;
@@ -44,6 +60,13 @@ body {
     font-size: 50px;
     margin-bottom: 10px;
     transition: opacity 0.3s ease;
+}
+
+.prog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidebar.minimized .profile-logo {
@@ -86,35 +109,32 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     background-color: white;
     color: #d66868;
 }
 
 .main-content {
-    margin-left: 21rem;
+    margin-left: 20rem;
+    /* Adjust this to match sidebar width */
     padding: 20px;
-    width: calc(100% - 25rem);
+    width: calc(100% - 20rem);
+    /* Adjust this to match sidebar width */
     transition: margin-left 0.3s ease, width 0.3s ease;
+    position: relative;
+    height: 100vh;
+    /* Ensure full height */
+    overflow: auto;
 }
 
-.sidebar.minimized + .main-content {
-    margin-left: 5rem;
-    width: calc(100% - 5rem);
-}
-
-.content {
-    width: 67rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 2rem 2rem;
-    opacity: 0;
+.sidebar.minimized+.main-content {
+    margin-left: 0;
+    width: 100%;
 }
 
 #content2 {
-    display: flex;
+    margin-top: 15rem;
     align-items: center;
     justify-content: center;
     background-color: white;
@@ -123,6 +143,7 @@ body {
 }
 
 #content2 h1 {
+    font-size: 3rem;
     margin-bottom: 3rem;
     color: #d66868;
 }
@@ -142,8 +163,23 @@ body {
     color: white;
 }
 
+.content {
+    width: 100%;
+    max-width: 1000px;
+    /* Ensure maximum width */
+    display: none;
+    /* Hide content by default */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* Center horizontally */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
 .content.active {
-    display: block;
+    display: flex;
     opacity: 1;
 }
 
@@ -214,89 +250,6 @@ p {
 #names p {
     font-size: 1.5rem;
     color: #d66868cf;
-}
-
-.for-div-1, .for-div-2, .for-div-3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 28rem;
-    background-color: white;
-    border-radius: 5px;
-    padding: 2rem;
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
-.dash h1 {
-    color: #d66868;
-    font-size: 3rem;
-}
-
-.progress-container {
-    display: flex;
-    flex-direction: column;
-    width: 23rem;
-    margin: 1rem 3rem 1rem 3rem;
-}
-
-.in-dash {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.prog-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.out-d {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-progress {
-    width: 100%;
-    -webkit-appearance: none;
-    appearance: none;
-    height: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #d8d8d8;
-}
-
-progress::-webkit-progress-bar {
-    background-color: #d8d8d8;
-}
-
-progress::-webkit-progress-value {
-    background-color: #8b16b9;
-    transition: width 1s ease;
-}
-
-progress::-moz-progress-bar {
-    background-color: #7c03b0;
-}
-
-.progress-container label {
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    color: white;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 #division {

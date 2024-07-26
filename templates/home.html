@@ -31,11 +31,11 @@
         </div>
         <div class="nav-links">
             <a href="#" class="nav-link active" data-content="content1">Dashboard</a>
-            <hr class="divider" style="color: #d66868;">
+            <hr class="divider" style="color: white;">
             <a href="#" class="nav-link" data-content="content2">Messages</a>
-            <hr class="divider" style="color: #d66868;">
+            <hr class="divider" style="color: white;">
             <a href="#" class="nav-link" data-content="content3">Settings</a>
-            <hr class="divider" style="color: #d66868;">
+            <hr class="divider" style="color: white;">
             <a href="#" class="nav-link" data-content="content4">Help</a>
         </div>
         <button class="sidebar-toggle" aria-label="Toggle sidebar">
@@ -191,7 +191,38 @@
                 <input type="file" id="csv-file" accept=".csv" required>
                 <button type="submit">Upload</button>
             </form>
-            <div id="output"></div>
+            <div id="output">
+                <div class="prog-content"
+                    style="background-color: white; padding: 2rem; margin: 1rem; border-radius: 5px;">
+                    <h1>2024</h1>
+                    <div class="in-dash">
+                        <div class="prog-cont">
+                            <div class="progress-container">
+                                <label for="level3-1" style="color: black;">Level 1: 50/100</label>
+                                <progress id="level3-1" value="50" max="100"></progress>
+                            </div>
+                            <div class="progress-container">
+                                <label for="level3-2" style="color: black;">Level 1: 50/100</label>
+                                <progress id="level3-2" value="50" max="100"></progress>
+                            </div>
+                            <div class="progress-container">
+                                <label for="level2-3" style="color: black;">Level 1: 50/100</label>
+                                <progress id="level2-3" value="50" max="100"></progress>
+                            </div>
+                        </div>
+                        <div class="prog-cont">
+                            <div class="progress-container">
+                                <label for="level3-3" style="color: black;">Level 1: 50/100</label>
+                                <progress id="level3-3" value="50" max="100"></progress>
+                            </div>
+                            <div class="progress-container">
+                                <label for="level3-4" style="color: black;">Level 1: 50/100</label>
+                                <progress id="level3-4" value="50" max="100"></progress>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="content3" class="content">
             <h1>Settings</h1>
@@ -269,6 +300,7 @@
             document.querySelector('#prog-IP1').style.display = 'block';
         });
     </script>
+
 </body>
 
 </html>
