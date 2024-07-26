@@ -1,306 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Anokha</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="/static/css/home.css" rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link href="/static/css/home.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <nav class="sidebar">
-        <div class="profile-section">
-            <div class="profile-logo">
-                <i class='navbar-brand bx bxl-graphql bx-spin' style='color: white; font-size: 75px;'></i>
-                <a class="navbar-brand" id="title" href="#">Anokha</a>
-            </div>
+      <div class="profile-section">
+        <div class="profile-logo">
+          <i
+            class="navbar-brand bx bxl-graphql bx-spin"
+            style="color: white; font-size: 75px"
+          ></i>
+          <a class="navbar-brand" id="title" href="#">Anokha</a>
         </div>
-        <div class="nav-links">
-            <a href="#" class="nav-link active" data-content="content1">Dashboard</a>
-            <hr class="divider" style="color: white;">
-            <a href="#" class="nav-link" data-content="content2">Messages</a>
-            <hr class="divider" style="color: white;">
-            <a href="#" class="nav-link" data-content="content3">Settings</a>
-            <hr class="divider" style="color: white;">
-            <a href="#" class="nav-link" data-content="content4">Help</a>
-        </div>
-        <button class="sidebar-toggle" aria-label="Toggle sidebar">
-            <i class='bx bx-chevron-left'></i>
-        </button>
+      </div>
+      <div class="nav-links">
+        <a href="#" class="nav-link active" data-content="content1">Home</a>
+        <hr class="divider" style="color: white" />
+        <a href="#" class="nav-link" data-content="content2">Analysis</a>
+        <hr class="divider" style="color: white" />
+        <a href="#" class="nav-link" data-content="content3">Settings</a>
+        <hr class="divider" style="color: white" />
+        <a href="#" class="nav-link" data-content="content4">Help</a>
+      </div>
+      <button class="sidebar-toggle" aria-label="Toggle sidebar">
+        <i class="bx bx-chevron-left"></i>
+      </button>
     </nav>
 
     <main class="main-content">
-        <div id="content1" class="content active">
-            <div id="names" class="sticky-names">
-                <h1>Hi Name!</h1>
-                <p>Welcome to your dashboard. Here you can see an overview of your activities.</p>
-            </div>
-            <div id="division">
-                <h1 data-division="IP1">IP1</h1>
-                <h1 data-division="IP2">IP2</h1>
-                <h1 data-division="IP3">IP3</h1>
-            </div>
-            <div class="dash">
-                <div class="prog-content" id="prog-IP1"
-                    style="background-color: white; padding: 2rem; margin: 1rem; border-radius: 5px;">
-                    <h1>2024</h1>
-                    <div class="in-dash">
-                        <div class="prog-cont">
-                            <div class="progress-container">
-                                <label for="level1-1" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level1-1" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level1-2" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level1-2" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level1-3" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level1-3" value="50" max="100"></progress>
-                            </div>
-                        </div>
-                        <div class="prog-cont">
-                            <div class="progress-container">
-                                <label for="level1-4" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level1-4" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level1-5" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level1-5" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level1-6" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level1-6" value="50" max="100"></progress>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="prog-content" id="prog-IP1"
-                    style="background-color: white; padding: 2rem; margin: 1rem; border-radius: 5px;">
-                    <h1>2024</h1>
-                    <div class="in-dash">
-                        <div class="prog-cont">
-                            <div class="progress-container">
-                                <label for="level1-1" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level1-1" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level1-2" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level1-2" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level1-3" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level1-3" value="50" max="100"></progress>
-                            </div>
-                        </div>
-                        <div class="prog-cont">
-                            <div class="progress-container">
-                                <label for="level1-4" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level1-4" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level1-5" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level1-5" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level1-6" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level1-6" value="50" max="100"></progress>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="prog-content" id="prog-IP2"
-                    style="background-color: white; padding: 2rem; margin: 1rem; border-radius: 5px;">
-                    <h1>2024</h1>
-                    <div class="in-dash">
-                        <div class="prog-cont">
-                            <div class="progress-container">
-                                <label for="level2-1" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level2-1" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level2-2" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level2-2" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level2-3" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level2-3" value="50" max="100"></progress>
-                            </div>
-                        </div>
-                        <div class="prog-cont">
-                            <div class="progress-container">
-                                <label for="level2-3" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level2-3" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level2-4" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level2-4" value="50" max="100"></progress>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="prog-content" id="prog-IP3"
-                    style="background-color: white; padding: 2rem; margin: 1rem; border-radius: 5px;">
-                    <h1>2024</h1>
-                    <div class="in-dash">
-                        <div class="prog-cont">
-                            <div class="progress-container">
-                                <label for="level3-1" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level3-1" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level3-2" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level3-2" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level2-3" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level2-3" value="50" max="100"></progress>
-                            </div>
-                        </div>
-                        <div class="prog-cont">
-                            <div class="progress-container">
-                                <label for="level3-3" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level3-3" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level3-4" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level3-4" value="50" max="100"></progress>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div id="content1" class="content active">
+        <div id="names" class="sticky-names">
+          <h1>Hi Prithik!</h1>
+          <p>
+            Welcome to your dashboard. Here you can see an overview of your
+            activities.
+          </p>
         </div>
-        <div id="content2" class="content">
-            <h1>Upload CSV File</h1>
-            <form id="upload-form">
-                <input type="file" id="csv-file" accept=".csv" required>
-                <button type="submit">Upload</button>
-            </form>
-            <div id="output">
-                <div class="prog-content"
-                    style="background-color: white; padding: 2rem; margin: 1rem; border-radius: 5px;">
-                    <h1>2024</h1>
-                    <div class="in-dash">
-                        <div class="prog-cont">
-                            <div class="progress-container">
-                                <label for="level3-1" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level3-1" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level3-2" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level3-2" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level2-3" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level2-3" value="50" max="100"></progress>
-                            </div>
-                        </div>
-                        <div class="prog-cont">
-                            <div class="progress-container">
-                                <label for="level3-3" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level3-3" value="50" max="100"></progress>
-                            </div>
-                            <div class="progress-container">
-                                <label for="level3-4" style="color: black;">Level 1: 50/100</label>
-                                <progress id="level3-4" value="50" max="100"></progress>
-                            </div>
-                        </div>
-                    </div>
+        <div id="division">
+          <h1 data-division="IP1">OP1</h1>
+          <h1 data-division="IP2">OP2</h1>
+          <h1 data-division="IP3">OP3</h1>
+        </div>
+        <div class="dash">
+          <div
+            class="prog-content"
+            id="prog-IP1"
+            style="
+              background-color: white;
+              padding: 2rem;
+              margin: 1rem;
+              border-radius: 5px;
+            "
+          >
+            <h1>2029</h1>
+            <div class="in-dash">
+              <div class="prog-cont">
+                <div class="progress-container">
+                  <label for="level1-1" style="color: black"
+                    >Decomposition (+): 4400000/1000000000</label
+                  >
+                  <progress
+                    id="level1-1"
+                    value="4400000"
+                    max="1000000000"
+                  ></progress>
                 </div>
+                <div class="progress-container">
+                  <label for="level1-2" style="color: black"
+                    >Reinstalling (+): 8800000/1000000000</label
+                  >
+                  <progress
+                    id="level1-2"
+                    value="8800000"
+                    max="1000000000"
+                  ></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level1-3" style="color: black"
+                    >H2 - Alkali (-): 221748000/1000000000</label
+                  >
+                  <progress
+                    id="level1-3"
+                    value="221748000"
+                    max="10000000000"
+                  ></progress>
+                </div>
+              </div>
+              <div class="prog-cont">
+                <div class="progress-container">
+                  <label for="level1-4" style="color: black"
+                    >H2 - PEM (-): 141422000/1000000000</label
+                  >
+                  <progress
+                    id="level1-4"
+                    value="141422000"
+                    max="10000000000"
+                  ></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level1-5" style="color: black"
+                    >CCS - Onshore (+) : 1669742344/1000000000</label
+                  >
+                  <progress
+                    id="level1-5"
+                    value="1669742344"
+                    max="1000000000"
+                  ></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level1-6" style="color: black"
+                    >CCS - Offshore (+): 2449858206/1000000000</label
+                  >
+                  <progress
+                    id="level1-6"
+                    value="2449858206"
+                    max="1000000000"
+                  ></progress>
+                </div>
+              </div>
             </div>
+          </div>
+          <div
+            class="prog-content"
+            id="prog-IP1"
+            style="
+              background-color: white;
+              padding: 2rem;
+              margin: 1rem;
+              border-radius: 5px;
+            "
+          >
+            <h1>2034</h1>
+            <div class="in-dash">
+              <div class="prog-cont">
+                <div class="progress-container">
+                  <label for="level1-1" style="color: black"
+                    >Decomposition (+): 11300000/1000000000</label
+                  >
+                  <progress
+                    id="level1-1"
+                    value="11300000"
+                    max="1000000000"
+                  ></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level1-2" style="color: black"
+                    >Reinstalling (+): 18700000/1000000000</label
+                  >
+                  <progress
+                    id="level1-2"
+                    value="18700000"
+                    max="1000000000"
+                  ></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level1-3" style="color: black"
+                    >H2 - Alkali (-): 284750500/1000000000</label
+                  >
+                  <progress
+                    id="level1-3"
+                    value="284750500"
+                    max="1000000000"
+                  ></progress>
+                </div>
+              </div>
+              <div class="prog-cont">
+                <div class="progress-container">
+                  <label for="level1-4" style="color: black"
+                    >H2 - PEM (-): 239747000/1000000000</label
+                  >
+                  <progress
+                    id="level1-4"
+                    value="239747000"
+                    max="1000000000"
+                  ></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level1-5" style="color: black"
+                    >CCS - Onshore (+): 858134068/1000000000</label
+                  >
+                  <progress
+                    id="level1-5"
+                    value="858134068"
+                    max="1000000000"
+                  ></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level1-6" style="color: black"
+                    >CCS - Offshore (+): 1638249931/1000000000</label
+                  >
+                  <progress
+                    id="level1-6"
+                    value="1638249931"
+                    max="1000000000"
+                  ></progress>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="prog-content"
+            id="prog-IP2"
+            style="
+              background-color: white;
+              padding: 2rem;
+              margin: 1rem;
+              border-radius: 5px;
+            "
+          >
+            <h1>2027</h1>
+            <div class="in-dash">
+              <div class="prog-cont">
+                <div class="progress-container">
+                  <label for="level2-1" style="color: black"
+                    >Decomposition (+): 5500000/1000000000</label
+                  >
+                  <progress
+                    id="level2-1"
+                    value="5500000"
+                    max="1000000000"
+                  ></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level2-2" style="color: black"
+                    >H2 - Alkali (+): 173516999/1000000000</label
+                  >
+                  <progress
+                    id="level2-2"
+                    value="173516999"
+                    max="1000000000"
+                  ></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level2-3" style="color: black"
+                    >H2 - PEM (+): 284750500/1000000000</label
+                  >
+                  <progress
+                    id="level2-3"
+                    value="284750500"
+                    max="1000000000"
+                  ></progress>
+                </div>
+              </div>
+              <div class="prog-cont">
+                <div class="progress-container">
+                  <label for="level2-3" style="color: black"
+                    >CCS - Onshore (-): 9348682758/1000000000</label
+                  >
+                  <progress
+                    id="level2-3"
+                    value="9348682758"
+                    max="1000000000"
+                  ></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level2-4" style="color: black"
+                    >CCS - Offshore (-): 13005475862/1000000000</label
+                  >
+                  <progress
+                    id="level2-4"
+                    value="13005475862"
+                    max="1000000000"
+                  ></progress>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="prog-content"
+            id="prog-IP3"
+            style="
+              background-color: white;
+              padding: 2rem;
+              margin: 1rem;
+              border-radius: 5px;
+            "
+          >
+            <h1>2025</h1>
+            <div class="in-dash">
+              <div class="prog-cont">
+                <div class="progress-container">
+                  <label for="level3-1" style="color: black"
+                    >Decomposition (+): 3300000/1000000000</label
+                  >
+                  <progress
+                    id="level3-1"
+                    value="33000000"
+                    max="1000000000"
+                  ></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level3-2" style="color: black"
+                    >H2 - Alkali (-): 261218999/1000000000</label
+                  >
+                  <progress
+                    id="level3-2"
+                    value="261218999"
+                    max="1000000000"
+                  ></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level2-3" style="color: black"
+                    >H2 - PEM (-): 187667999/1000000000</label
+                  >
+                  <progress
+                    id="level2-3"
+                    value="187667999"
+                    max="1000000000"
+                  ></progress>
+                </div>
+              </div>
+              <div class="prog-cont">
+                <div class="progress-container">
+                  <label for="level3-3" style="color: black"
+                    >CCS - Onshore (): 0/1000000000</label
+                  >
+                  <progress id="level3-3" value="0" max="1000000000"></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level3-4" style="color: black"
+                    >CCS - Onshore (): 0/1000000000</label
+                  >
+                  <progress id="level3-4" value="0" max="1000000000"></progress>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="content3" class="content">
-            <h1>Settings</h1>
-            <p>Manage your account settings and preferences here.</p>
+      </div>
+      <div id="content2" class="content">
+        <h1>Upload CSV File</h1>
+        <form
+          id="upload-form"
+          action="/upload"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <input type="file" id="csv-file" name="filcs" required />
+          <button type="submit">Upload</button>
+        </form>
+
+        <div id="output">
+          <div
+            class="prog-content"
+            style="
+              background-color: white;
+              padding: 2rem;
+              margin: 1rem;
+              border-radius: 5px;
+            "
+          >
+            <h1>2024</h1>
+            <div class="in-dash">
+              <div class="prog-cont">
+                <div class="progress-container">
+                  <label for="level3-1" style="color: black"
+                    >Level 1: 50/100</label
+                  >
+                  <progress id="level3-1" value="50" max="100"></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level3-2" style="color: black"
+                    >Level 1: 50/100</label
+                  >
+                  <progress id="level3-2" value="50" max="100"></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level2-3" style="color: black"
+                    >Level 1: 50/100</label
+                  >
+                  <progress id="level2-3" value="50" max="100"></progress>
+                </div>
+              </div>
+              <div class="prog-cont">
+                <div class="progress-container">
+                  <label for="level3-3" style="color: black"
+                    >Level 1: 50/100</label
+                  >
+                  <progress id="level3-3" value="50" max="100"></progress>
+                </div>
+                <div class="progress-container">
+                  <label for="level3-4" style="color: black"
+                    >Level 1: 50/100</label
+                  >
+                  <progress id="level3-4" value="50" max="100"></progress>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="content4" class="content">
-            <h1>Help</h1>
-            <p>Find answers to common questions and get support here.</p>
-        </div>
+      </div>
+      <div id="content3" class="content">
+        <h1>Settings</h1>
+        <p>Manage your account settings and preferences here.</p>
+      </div>
+      <div id="content4" class="content">
+        <h1>Help</h1>
+        <p>Find answers to common questions and get support here.</p>
+      </div>
     </main>
 
     <script>
-        document.querySelector('.sidebar-toggle').addEventListener('click', function () {
-            const sidebar = document.querySelector('.sidebar');
-            const mainContent = document.querySelector('.main-content');
-            const icon = document.querySelector('.sidebar-toggle i');
+      document
+        .querySelector(".sidebar-toggle")
+        .addEventListener("click", function () {
+          const sidebar = document.querySelector(".sidebar");
+          const mainContent = document.querySelector(".main-content");
+          const icon = document.querySelector(".sidebar-toggle i");
 
-            sidebar.classList.toggle('minimized');
-            mainContent.classList.toggle('expanded');
+          sidebar.classList.toggle("minimized");
+          mainContent.classList.toggle("expanded");
 
-            // Toggle icon direction
-            if (sidebar.classList.contains('minimized')) {
-                icon.classList.remove('bx-chevron-left');
-                icon.classList.add('bx-chevron-right');
-            } else {
-                icon.classList.remove('bx-chevron-right');
-                icon.classList.add('bx-chevron-left');
-            }
+          // Toggle icon direction
+          if (sidebar.classList.contains("minimized")) {
+            icon.classList.remove("bx-chevron-left");
+            icon.classList.add("bx-chevron-right");
+          } else {
+            icon.classList.remove("bx-chevron-right");
+            icon.classList.add("bx-chevron-left");
+          }
         });
 
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function () {
-                document.querySelectorAll('.content').forEach(content => {
-                    content.classList.remove('active');
-                });
-                document.getElementById(this.dataset.content).classList.add('active');
-                document.querySelectorAll('.nav-link').forEach(nav => {
-                    nav.classList.remove('active');
-                });
-                this.classList.add('active');
-            });
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", function () {
+          document.querySelectorAll(".content").forEach((content) => {
+            content.classList.remove("active");
+          });
+          document.getElementById(this.dataset.content).classList.add("active");
+          document.querySelectorAll(".nav-link").forEach((nav) => {
+            nav.classList.remove("active");
+          });
+          this.classList.add("active");
         });
+      });
 
-        document.querySelectorAll('#division h1').forEach(division => {
-            division.addEventListener('click', function () {
-                document.querySelectorAll('.prog-content').forEach(prog => {
-                    prog.style.display = 'none';
-                });
-                document.querySelectorAll('#division h1').forEach(div => {
-                    div.style.backgroundColor = '#d66868';
-                    div.style.color = 'white';
-                });
-                this.style.backgroundColor = 'white';
-                this.style.color = "#d66868";
-                const progDivs = document.querySelectorAll('#prog-' + this.dataset.division);
-                progDivs.forEach(progDiv => {
-                    progDiv.style.display = 'block';
-                });
-            });
+      document.querySelectorAll("#division h1").forEach((division) => {
+        division.addEventListener("click", function () {
+          document.querySelectorAll(".prog-content").forEach((prog) => {
+            prog.style.display = "none";
+          });
+          document.querySelectorAll("#division h1").forEach((div) => {
+            div.style.backgroundColor = "#d66868";
+            div.style.color = "white";
+          });
+          this.style.backgroundColor = "white";
+          this.style.color = "#d66868";
+          const progDivs = document.querySelectorAll(
+            "#prog-" + this.dataset.division
+          );
+          progDivs.forEach((progDiv) => {
+            progDiv.style.display = "block";
+          });
         });
+      });
 
-        // Animate progress bars on load
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('progress').forEach(progress => {
-                const max = progress.max;
-                const value = progress.value;
-                progress.value = 0;
-                setTimeout(() => {
-                    progress.value = value;
-                }, 500); // delay to make sure the animation is visible
-            });
-            document.querySelectorAll('.prog-content').forEach(prog => {
-                prog.style.display = 'none';
-            });
-            document.querySelector('#prog-IP1').style.display = 'block';
+      // Animate progress bars on load
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("progress").forEach((progress) => {
+          const max = progress.max;
+          const value = progress.value;
+          progress.value = 0;
+          setTimeout(() => {
+            progress.value = value;
+          }, 500); // delay to make sure the animation is visible
         });
+        document.querySelectorAll(".prog-content").forEach((prog) => {
+          prog.style.display = "none";
+        });
+        document.querySelector("#prog-IP1").style.display = "block";
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
