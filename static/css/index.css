@@ -99,7 +99,9 @@ header {
     color: rgba(255, 255, 255, 0.8);
 }
 
-#lp-h-2 button {
+#lp-h-2 a {
+    display: flex;
+    text-decoration: none;
     margin-top: 7rem;
     align-items: center;
     justify-content: center;
@@ -114,7 +116,7 @@ header {
     animation: pulse 2s infinite; /* Continuous animation */
 }
 
-#lp-h-2 button:hover {
+#lp-h-2 a:hover {
     background-color: rgb(214, 104, 104);
     color: white;
     border: solid white 2px;

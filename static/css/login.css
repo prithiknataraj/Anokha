@@ -1,5 +1,5 @@
 body {
-    background: url("/styles/images/bg.jpg") center/cover no-repeat;
+    background: url("/static/images/bg.jpg") center/cover no-repeat;
 }
 
 .navbar {

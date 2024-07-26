@@ -54,7 +54,8 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="login">
-                    <button class="btn custom-login-button me-3" type="submit">Login</button>
+                    <!-- Corrected login link to point to /login endpoint -->
+                    <a class="btn custom-login-button me-3" href="/login">Login</a>
                 </form>
             </div>
         </div>
@@ -74,9 +75,8 @@
                 Join our Gatherings!
             </h1>
             <p>Nithish will tell me what to add in the about. This content is called about for this landing page.</p>
-            <button>
-                Login
-            </button>
+            <!-- Corrected login link to point to /login endpoint -->
+            <a href="/login">Login</a>
         </div>
     </header>
     <footer>
@@ -123,7 +123,7 @@
             document.querySelector(".find-more-button").textContent = translations[lang].findMore;
             document.querySelector("#lp-h-2 h1").textContent = translations[lang].joinGatherings;
             document.querySelector("#lp-h-2 p").textContent = translations[lang].aboutContent;
-            document.querySelector("#lp-h-2 button").textContent = translations[lang].login;
+            document.querySelector("#lp-h-2 a").textContent = translations[lang].login;
             document.querySelector("footer h1").textContent = translations[lang].copyright;
         }
     </script>

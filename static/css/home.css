@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: url("/styles/images/bg.jpg") center/cover no-repeat fixed;
+    background: url("/static/images/bg.jpg") center/cover no-repeat fixed;
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     height: 100vh;
@@ -113,6 +113,35 @@ body {
     opacity: 0;
 }
 
+#content2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 2rem 3rem 3rem 3rem;
+    border-radius: 5px;
+}
+
+#content2 h1 {
+    margin-bottom: 3rem;
+    color: #d66868;
+}
+
+#upload-form {
+    border: solid 1px #d66868;
+    padding: 2rem;
+    border-radius: 5px;
+    color: #d66868;
+}
+
+#upload-form button {
+    cursor: pointer;
+    border: #d66868 solid 1px;
+    border-radius: 5px;
+    background: #d66868;
+    color: white;
+}
+
 .content.active {
     display: block;
     opacity: 1;
@@ -187,7 +216,7 @@ p {
     color: #d66868cf;
 }
 
-.dash {
+.for-div-1, .for-div-2, .for-div-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,18 +234,31 @@ p {
     font-size: 3rem;
 }
 
-.prog-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 1rem;
-}
-
 .progress-container {
     display: flex;
     flex-direction: column;
-    width: 27rem;
-    margin: 2rem;
+    width: 23rem;
+    margin: 1rem 3rem 1rem 3rem;
+}
+
+.in-dash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.out-d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 progress {
